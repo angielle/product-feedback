@@ -15,7 +15,8 @@ const config: Config = {
       'royal-blue': {
         100: '#F2F4FE',
         200: '#CFD7FF',
-        300: '#4661E6'
+        300: '#8397F8',
+        400: '#4661E6'
       },
       'slate-blue': {
         100: '#656EA3', 

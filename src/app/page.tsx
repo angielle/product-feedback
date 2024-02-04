@@ -5,17 +5,17 @@ import Feedback from "./components/feedback/Feedback";
 
 export default function Home() {
   return (
-    <div className='flex min-h-screen flex-col mt-20'>
+    <div className='flex flex-col min-h-screen mt-20'>
       <div className='container mx-auto'>
         <div className='flex flex-row flex-wrap py-4'>
-          <aside className='w-1/6 sm:w-1/3 md:w-1/4 px-2'>
-            <div className='sticky top-0 p-4 w-full'>
+          <aside className='w-1/5  px-2'>
+            <div className='sticky top-0 w-full'>
               <ul className='flex flex-col overflow-hidden'>
                 <Sidebar />
               </ul>
             </div>
           </aside>
-          <main role='main' className='w-full sm:w-2/3 md:w-3/4 pt-1 px-2'>
+          <main role='main' className='w-full sm:w-2/3 md:w-3/4 px-2'>
             <Header />
             <Feedback
               title='Add tags for solutions'

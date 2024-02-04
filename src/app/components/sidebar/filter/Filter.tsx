@@ -1,9 +1,9 @@
 import React from "react";
-import Category from "../category/Category";
+import Category from "../../category/Category";
 
 const Filter = () => {
   return (
-    <div className="rounded-lg bg-white flex flex-wrap gap-x-2 p-5">
+    <div className="rounded-lg bg-white flex flex-wrap gap-x-2 gap-y-2 px-5 py-5 ">
       <Category name='All' />
       <Category name='UI' />
       <Category name='UX' />

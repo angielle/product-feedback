@@ -20,7 +20,8 @@ const config: Config = {
       },
       'slate-blue': {
         100: '#656EA3', 
-        200: '#373F68'
+        200: '#373F68',
+        300: '#3A4374'
       },
       'red': {
         100: '#E98888 ',
@@ -28,6 +29,12 @@ const config: Config = {
       },
       'black': '#4661E6',
       'white': '#FFFFFF',
+      'gray': {
+        100: '#F7F8FD',
+        200: '#F2F4FF',
+        300: '#647196',
+        400: '#979797',
+      },
       'med-gray': '#F2F4FF', 
       'light-gray': '#F7F8FD',
       'med-blue': '#3A4374',

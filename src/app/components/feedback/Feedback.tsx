@@ -25,12 +25,12 @@ const Feedback = ({
         <div className='h-full flex items-center'>
           <div className='flex flex-col justify-center items-center rounded-lg px-3 py-3 gap-2 bg-royal-blue-100 hover:bg-royal-blue-200'>
             <Image src={ArrowUpIcon} alt='upvote' />
-            <span className='text-sm font-bold text-med-blue'>{upvote}</span>
+            <span className='text-sm font-bold text-state-blue-300'>{upvote}</span>
           </div>
         </div>
       </div>
       <div className='flex-1 h-12 px-2'>
-        <h3 className='font-bold text-med-blue'>{title}</h3>
+        <h3 className='font-bold text-state-blue-300'>{title}</h3>
         <p className='mt-1 text-lg text-dark-gray'>{description}</p>
         <div className='mt-3'>
           <Category name='Enhancement' disableHover />
@@ -40,7 +40,7 @@ const Feedback = ({
         <div className='h-full flex items-center'>
           <div className='flex flex-row justify-center items-center rounded-lg gap-4'>
             <Image src={SuggestionIcon} alt='upvote' />
-            <span className='text-lg font-bold text-med-blue'>
+            <span className='text-lg font-bold text-state-blue-300'>
               {commentsCount}
             </span>
           </div>

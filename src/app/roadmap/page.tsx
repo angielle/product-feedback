@@ -8,15 +8,15 @@ const RoadmapPage = () => {
         <Header />
         <div className='flex columns-3'>
           <div className='flex-1'>
-            <h3 className='med-blue'>Planned</h3>
+            <h3 className='text-state-blue-300'>Planned</h3>
             <p className='text-dark-gray'>Ideas prioritized for research</p>
           </div>
           <div className='flex-1'>
-            <h3 className='med-blue'>In-Progress</h3>
+            <h3 className='text-state-blue-300'>In-Progress</h3>
             <p className='text-dark-gray'>Currently being developed</p>
           </div>
           <div className='flex-1'>
-            <h3 className='med-blue'>Live</h3>
+            <h3 className='text-state-blue-300'>Live</h3>
             <p className='text-dark-gray'>Released features</p>
           </div>
         </div>

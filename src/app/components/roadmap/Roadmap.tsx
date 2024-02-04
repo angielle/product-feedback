@@ -2,10 +2,10 @@ import React from "react";
 
 const Roadmap = () => {
   return (
-    <div className="bg-white my-2 rounded-lg">
-      <h1>Roadmap</h1>
-      <ul>
-        <li>Planned</li>
+    <div className="rounded-lg bg-white p-5 mt-5">
+      <h3>Roadmap</h3>
+      <ul className="mt-5">
+        <li className="font-lg">Planned</li>
         <li>In-Progress</li>
         <li>Live</li>
       </ul>

@@ -1,15 +1,20 @@
 import React from "react";
-import Category from "./category/Category";
-import Roadmap from "./roadmap/Roadmap";
+import Filter from "../filter/Filter";
+import Roadmap from "../roadmap/Roadmap";
 
 const Sidebar = () => {
   return (
     <div>
-      <div className='bg-desktop-bg'>
+      <div
+        style={{
+          backgroundImage:
+            "url('./public/assets/suggestions/desktop/background-header.png')",
+        }}
+      >
         <h2>Frontend Mentor</h2>
       </div>
       <h4>Feedback Board</h4>
-      <Category />
+      <Filter />
       <Roadmap />
     </div>
   );

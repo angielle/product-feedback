@@ -1,13 +1,14 @@
 import Image from "next/image";
-import Feedback from "./components/feedback/Feedback";
+import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
+import Feedback from "./components/feedback/Feedback";
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col mt-20'>
+    <div className='flex min-h-screen flex-col mt-20'>
       <div className='container mx-auto'>
         <div className='flex flex-row flex-wrap py-4'>
-          <aside className='w-full sm:w-1/3 md:w-1/4 px-2'>
+          <aside className='w-1/6 sm:w-1/3 md:w-1/4 px-2'>
             <div className='sticky top-0 p-4 w-full'>
               <ul className='flex flex-col overflow-hidden'>
                 <Sidebar />
@@ -15,16 +16,24 @@ export default function Home() {
             </div>
           </aside>
           <main role='main' className='w-full sm:w-2/3 md:w-3/4 pt-1 px-2'>
+            <Header />
             <Feedback
               title='Add tags for solutions'
-              description='Easier to search for solutions based on a specific stack'
+              description='Easier to search for solutions based on a specific stack.'
               category='Enhancement'
+              upvote={112}
               commentsCount={2}
-              vote={112}
+            />
+            <Feedback
+              title='Add a dark theme option'
+              description='It would help people with light sensitivities and who prefer dark mode.'
+              category='Feature'
+              upvote={99}
+              commentsCount={4}
             />
           </main>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

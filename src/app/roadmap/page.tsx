@@ -9,15 +9,15 @@ const RoadmapPage = () => {
         <div className='flex columns-3'>
           <div className='flex-1'>
             <h3 className='text-state-blue-300'>Planned</h3>
-            <p className='text-dark-gray'>Ideas prioritized for research</p>
+            <p className='text-gray-300'>Ideas prioritized for research</p>
           </div>
           <div className='flex-1'>
             <h3 className='text-state-blue-300'>In-Progress</h3>
-            <p className='text-dark-gray'>Currently being developed</p>
+            <p className='text-gray-300'>Currently being developed</p>
           </div>
           <div className='flex-1'>
             <h3 className='text-state-blue-300'>Live</h3>
-            <p className='text-dark-gray'>Released features</p>
+            <p className='text-gray-300'>Released features</p>
           </div>
         </div>
       </div>

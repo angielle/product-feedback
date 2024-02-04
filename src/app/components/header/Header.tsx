@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </div>
       <div className='w-1/4 flex justify-end'>
-        <div className='flex flex-row items-center px-5 py-3 gap-3 rounded-lg bg-violet-200 hover:bg-violet-100'>
+        <div className='flex flex-row items-center px-5 py-3 gap-3 rounded-lg bg-primary hover:bg-primary-100'>
           <Image src={PlusIcon} alt='add feedback' />
           <Link href='/feedback/new'>
             <p className='text-lg font-bold text-white'>Add Feedback</p>

@@ -17,23 +17,23 @@ const Roadmap = () => {
         <div className='flex flex-row justify-between'>
           <div className='flex flex-row items-center gap-x-3'>
             <div className='w-2 h-2 bg-orange rounded-full' />
-            <li className='text-dark-gray'>Planned</li>
+            <li className='text-gray-300'>Planned</li>
           </div>
-          <span className='text-dark-gray text-lg font-bold'>2</span>
+          <span className='text-gray-300 text-lg font-bold'>2</span>
         </div>
         <div className='flex flex-row justify-between'>
           <div className='flex flex-row items-center gap-x-3'>
-            <div className='w-2 h-2 bg-violet-200 rounded-full' />
-            <li className='text-dark-gray'>In-Progress</li>
+            <div className='w-2 h-2 bg-primary rounded-full' />
+            <li className='text-gray-300'>In-Progress</li>
           </div>
-          <span className='text-dark-gray text-lg font-bold'>3</span>
+          <span className='text-gray-300 text-lg font-bold'>3</span>
         </div>
         <div className='flex flex-row justify-between'>
           <div className='flex flex-row items-center gap-x-3'>
             <div className='w-2 h-2 bg-sky-blue rounded-full' />
-            <li className='text-dark-gray'>Live</li>
+            <li className='text-gray-300'>Live</li>
           </div>
-          <span className='text-dark-gray text-lg font-bold'>1</span>
+          <span className='text-gray-300 text-lg font-bold'>1</span>
         </div>
       </div>
     </div>

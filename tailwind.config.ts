@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      'primary': {
+        100: '#C75AF6',
+        DEFAULT: '#AD1FEA'
+      },
+      'secondary': {
+        100: '#656EA3',
+        DEFAULT: '#3A4374', 
+      },
       'violet': {
         100: '#C75AF6',
         200: '#AD1FEA',
@@ -35,13 +43,8 @@ const config: Config = {
         300: '#647196',
         400: '#979797',
       },
-      'med-gray': '#F2F4FF', 
-      'light-gray': '#F7F8FD',
-      'med-blue': '#3A4374',
-      'dark-gray': '#647196',
       'orange': '#F49F85',
       'sky-blue': '#62BCFA',
-      
     },
     extend: {
       fontSize: {

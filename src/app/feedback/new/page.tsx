@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import './Dropdown.css';
+import Button from "@/app/components/button/Button";
 
 const NewFeedback = () => {
-  const options = ['Feature', 'UI', 'UX', 'Enhancement', 'Bug'];
+  const options = ["Feature", "UI", "UX", "Enhancement", "Bug"];
 
   return (
     <div className='flex flex-col items-center justify-center h-full mt-20'>
@@ -20,7 +20,7 @@ const NewFeedback = () => {
               Add a short, descriptive headline
             </h4>
             <input
-              className='block w-full rounded py-3 px-4 bg-gray-100 focus:border-royal-blue-400  text-slate-blue-300'
+              className='block w-full rounded py-3 px-4 bg-gray-100 focus:border-royal-blue-400  text-secondary'
               type='text'
             />
           </div>
@@ -31,9 +31,16 @@ const NewFeedback = () => {
               Choose a category for your feedback
             </h4>
           </div>
-          <select id='dropdown' className='custom-focus block w-full rounded py-3 px-4 bg-gray-100 hover:border-royal-blue-400  text-slate-blue-300'>
+          <select
+            id='dropdown'
+            className='custom-focus block w-full rounded py-3 px-4 bg-gray-100 hover:border-royal-blue-400  text-secondary'
+          >
             {options.map((option, index) => (
-              <option key={index} value={option} className='text-lg text-dark-gray hover:text-white'>
+              <option
+                key={index}
+                value={option}
+                className='text-lg text-gray-300 hover:text-white'
+              >
                 {option}
               </option>
             ))}
@@ -44,8 +51,13 @@ const NewFeedback = () => {
               Include any specific comments on what should be improved, added,
               etc.
             </h4>
-            <textarea className='block w-full rounded resize-none py-3 px-4 bg-gray-100 focus:border-royal-blue-400  text-slate-blue-300' />
+            <textarea className='block w-full rounded resize-none py-3 px-4 bg-gray-100 focus:border-royal-blue-400  text-secondary' />
           </div>
+        </div>
+
+        <div className='flex flex-row items-center justify-end'>
+          <Button name='Cancel' type='secondary' />
+          <Button name='Add Feedback' type='primary' />
         </div>
       </div>
     </div>

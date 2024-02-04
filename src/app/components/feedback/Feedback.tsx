@@ -31,7 +31,7 @@ const Feedback = ({
       </div>
       <div className='flex-1 h-12 px-2'>
         <h3 className='font-bold text-state-blue-300'>{title}</h3>
-        <p className='mt-1 text-lg text-dark-gray'>{description}</p>
+        <p className='mt-1 text-lg text-gray-300'>{description}</p>
         <div className='mt-3'>
           <Category name='Enhancement' disableHover />
         </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/app/components/button/Button";
 import Input from "@/app/components/form/Input";
 import TextArea from "@/app/components/form/TextArea";
+import Header from "../components/Header";
 import NewFeedbackIcon from "public/assets/shared/icon-new-feedback.svg";
 import LeftArrowIcon from "public/assets/shared/icon-arrow-left.svg";
 
@@ -13,13 +14,7 @@ const NewFeedback = () => {
   return (
     <div className='flex justify-center mt-20'>
       <div className='w-4/12 px-10'>
-        <Link
-          href='/'
-          className='flex flex-row items-center px-5 py-3 gap-3 mb-16 rounded-lg'
-        >
-          <Image src={LeftArrowIcon} alt='add feedback' />
-          <h4 className='font-bold text-gray-300 hover:underline'>Go Back</h4>
-        </Link>
+        <Header hideAction />
         <div className='container rounded-lg bg-white px-10 py-9'>
           <Image src={NewFeedbackIcon} alt='new feedback' className='-mt-16' />
           <h1 className='text-state-blue-300 my-10'>Create New Feedback</h1>

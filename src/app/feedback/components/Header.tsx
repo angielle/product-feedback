@@ -4,9 +4,13 @@ import Image from "next/image";
 import Button from "@/app/components/button/Button";
 import Lefticon from "public/assets/shared/icon-arrow-left.svg";
 
-const Header = () => {
+interface HeaderProps {
+  hideAction?: boolean;
+}
+
+const Header = ({ hideAction = false }: HeaderProps) => {
   return (
-    <div className='flex items-center justify-between rounded-lg px-5 mb-5 h-24'>
+    <div className='flex items-center justify-between rounded-lg mb-5 h-24'>
       <div className='w-1/4 px-2'>
         <div className='h-full'>
           <div className='flex flex-col'>
@@ -21,11 +25,13 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className='w-1/4 flex justify-end'>
-        <Link href='/feedback/edit'>
-          <Button name='Edit Feedback' type='secondary' />
-        </Link>
-      </div>
+      {!hideAction && (
+        <div className='w-1/4 flex justify-end'>
+          <Link href='/feedback/edit'>
+            <Button name='Edit Feedback' type='secondary' />
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

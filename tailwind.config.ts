@@ -46,6 +46,9 @@ const config: Config = {
       'orange': '#F49F85',
       'sky-blue': '#62BCFA',
     },
+    borderWidth: {
+      '7': '7px'
+    },
     extend: {
       fontSize: {
         'lg': '16px',

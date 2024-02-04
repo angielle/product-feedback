@@ -33,7 +33,7 @@ const Feedback = ({
         <h3 className='font-bold text-state-blue-300'>{title}</h3>
         <p className='mt-1 text-lg text-gray-300'>{description}</p>
         <div className='mt-3'>
-          <Category name='Enhancement' disableHover />
+          <Category name='Enhancement' disable />
         </div>
       </div>
       <div className='w-16 m-auto'>

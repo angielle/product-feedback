@@ -12,11 +12,11 @@ const Button = ({ name, type }: ButtonProps) => {
   switch (type) {
     case "primary":
       bgColorClass = "bg-primary";
-      hoverColorClass = "hover:bg-primary-100"
+      hoverColorClass = "hover:bg-primary-100";
       break;
     case "secondary":
       bgColorClass = "bg-secondary";
-      hoverColorClass = "hover:bg-secondary-100"
+      hoverColorClass = "hover:bg-secondary-100";
       break;
   }
 
@@ -24,9 +24,7 @@ const Button = ({ name, type }: ButtonProps) => {
     <div
       className={`flex flex-row items-center px-5 py-3 mx-1 rounded-lg ${bgColorClass} ${hoverColorClass}`}
     >
-      <Link href='/feedback/new'>
-        <p className='text-lg font-bold text-white'>{name}</p>
-      </Link>
+      <p className='text-lg font-bold text-white'>{name}</p>
     </div>
   );
 };

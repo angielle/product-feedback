@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import SuggestionIcon from "public/assets/suggestions/icon-suggestions.svg";
 import PlusIcon from "public/assets/shared/icon-plus.svg";
 import Lefticon from "public/assets/shared/icon-arrow-left.svg";
 
@@ -13,8 +12,10 @@ const Header = () => {
           <div className='flex flex-col'>
             <div className='flex flex-row items-center gap-3'>
               <Image src={Lefticon} alt='go back' />
-              <Link href="/">
-                <h4 className='font-bold text-white hover:underline'>Go Back</h4>
+              <Link href='/'>
+                <h4 className='font-bold text-white hover:underline'>
+                  Go Back
+                </h4>
               </Link>
             </div>
             <h1 className='ml-2 font-bold text-white'>Roadmap</h1>

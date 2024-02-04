@@ -46,11 +46,11 @@ const Card = ({
       <h3 className='text-secondary'>{title}</h3>
       <p className='mb-5 text-gray-300'>{description}</p>
       <div className='gap-y-4'>
-        <Category name='Feature' disable />
+        <Category name={category} disable />
         <div className='flex items-center justify-between mt-5'>
-          <Upvote count={123} size='sm' />
+          <Upvote count={upvote} size='sm' />
           <div className='justify-end'>
-            <Comment count={2} />
+            <Comment count={commentsCount} />
           </div>
         </div>
       </div>

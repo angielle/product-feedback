@@ -55,8 +55,8 @@ const RoadmapPage = () => {
             <p className='text-gray-300 mb-7'>Released features</p>
             <div>
               <Card
-                title='More comprehensive reports'
-                description='It would be great to see a more detailed breakdown of solutions.'
+                title='Add micro-interactions'
+                description='Small animations at specific points can add delight.'
                 upvote={71}
                 commentsCount={2}
                 category='Enhancement'

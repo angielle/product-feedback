@@ -13,6 +13,10 @@ const config: Config = {
         DEFAULT: '#AD1FEA'
       },
       'secondary': {
+        100: '#7C91F9',
+        DEFAULT: '#4661E6', 
+      },
+      'tertiary': {
         100: '#656EA3',
         DEFAULT: '#3A4374', 
       },

@@ -43,7 +43,7 @@ const Card = ({
         <div className={`w-2 h-2 ${bgColorClass} rounded-full`} />
         <li className='list-none text-gray-300'>{status}</li>
       </div>
-      <h3 className='text-secondary'>{title}</h3>
+      <h3 className='text-tertiary'>{title}</h3>
       <p className='mb-5 text-gray-300'>{description}</p>
       <div className='gap-y-4'>
         <Category name={category} disable />

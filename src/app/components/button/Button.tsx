@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface ButtonProps {
   name: string;
-  type: "primary" | "secondary" | "danger";
+  type: "primary" | "secondary" | "tertiary" | "danger";
 }
 
 const Button = ({ name, type }: ButtonProps) => {
@@ -17,6 +17,18 @@ const Button = ({ name, type }: ButtonProps) => {
     case "secondary":
       bgColorClass = "bg-secondary";
       hoverColorClass = "hover:bg-secondary-100";
+      break;
+    case "tertiary":
+      bgColorClass = "bg-tertiary";
+      hoverColorClass = "hover:bg-tertiary-100";
+      break;
+    case "danger":
+      bgColorClass = "bg-red-200";
+      hoverColorClass = "hover:bg-red-100";
+      break;
+    default:
+      bgColorClass = "bg-primary";
+      hoverColorClass = "hover:bg-primary-100";
       break;
   }
 

@@ -4,10 +4,10 @@ import Image from "next/image";
 import Button from "@/app/components/button/Button";
 import Input from "@/app/components/form/Input";
 import TextArea from "@/app/components/form/TextArea";
-import NewFeedbackIcon from "public/assets/shared/icon-new-feedback.svg";
+import EditFeedbackIcon from "public/assets/shared/icon-edit-feedback.svg";
 import LeftArrowIcon from "public/assets/shared/icon-arrow-left.svg";
 
-const NewFeedback = () => {
+const EditFeedback = () => {
   const options = ["Feature", "UI", "UX", "Enhancement", "Bug"];
 
   return (
@@ -21,8 +21,10 @@ const NewFeedback = () => {
           <h4 className='font-bold text-gray-300 hover:underline'>Go Back</h4>
         </Link>
         <div className='container rounded-lg bg-white px-10 py-9'>
-          <Image src={NewFeedbackIcon} alt='new feedback' className='-mt-16' />
-          <h1 className='text-state-blue-300 my-10'>Create New Feedback</h1>
+          <Image src={EditFeedbackIcon} alt='edit feedback' className='-mt-16' />
+          <h1 className='text-state-blue-300 my-10'>
+            Editing 'Add a dark theme option'
+          </h1>
           <div className='mt-9'>
             <div className='my-5'>
               <h4 className='font-bold text-state-blue-300'>Feedback Title</h4>
@@ -30,7 +32,6 @@ const NewFeedback = () => {
                 Add a short, descriptive headline
               </h4>
               <Input />
-
             </div>
 
             <div className='my-5'>
@@ -60,15 +61,21 @@ const NewFeedback = () => {
                 etc.
               </h4>
               <TextArea />
-
             </div>
           </div>
 
-          <div className='flex flex-row items-center justify-end'>
-            <Link href='/'>
-              <Button name='Cancel' type='tertiary' />
-            </Link>
-            <Button name='Add Feedback' type='primary' />
+          <div className='flex flex-row items-center justify-between'>
+            <div>
+              <Link href='/'>
+                <Button name='Delete' type='danger' />
+              </Link>
+            </div>
+            <div className='flex flex-row'>
+              <Link href='/'>
+                <Button name='Cancel' type='tertiary' />
+              </Link>
+              <Button name='Add Feedback' type='primary' />
+            </div>
           </div>
         </div>
       </div>
@@ -76,4 +83,4 @@ const NewFeedback = () => {
   );
 };
 
-export default NewFeedback;
+export default EditFeedback;

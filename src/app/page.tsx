@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen mt-20'>
       <div className='container mx-auto'>
-        <div className='flex flex-row flex-wrap py-4'>
-          <aside className='w-1/5  px-2'>
+        <div className='flex sm:flex-col md:flex-col lg:flex-row lg:py-4 flex-wrap '>
+          <aside className='sm:w-full md:w-full lg:w-1/5  px-2'>
             <div className='sticky top-0 w-full'>
-              <ul className='flex flex-col overflow-hidden'>
+              <ul className='flex sm:flex-row md:flex-row lg:flex-col overflow-hidden'>
                 <Sidebar />
               </ul>
             </div>

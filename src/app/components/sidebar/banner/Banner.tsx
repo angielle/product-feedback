@@ -9,7 +9,7 @@ const Banner = () => {
         position: "relative",
         color: "white",
       }}
-      className='flex bg-no-repeat bg-cover h-32 rounded-lg'
+      className='sm:w-1/3 md:w-1/3 lg:w-full lg:h-32 flex bg-no-repeat bg-cover rounded-lg'
     >
       <div className='self-end px-5 pb-5'>
         <h2 className='font-bold text-white'>Frontend Mentor</h2>

@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen mt-20'>
       <div className='container mx-auto'>
-        <div className='flex sm:flex-col md:flex-col lg:flex-row lg:py-4 flex-wrap '>
-          <aside className='sm:w-full md:w-full lg:w-1/5  px-2'>
+        <div className='flex sm:flex-col md:flex-col lg:flex-row lg:py-4 flex-wrap'>
+          <aside className='sm:w-full md:w-full lg:w-1/5 px-2'>
             <div className='sticky top-0 w-full'>
               <ul className='flex sm:flex-row md:flex-row lg:flex-col overflow-hidden'>
                 <Sidebar />
               </ul>
             </div>
           </aside>
-          <main role='main' className='w-full sm:w-2/3 md:w-3/4 px-2'>
+          <main role='main' className='sm:w-2/3 md:w-full lg:w-3/4 px-2'>
             <Header />
             <Feedback
               title='Add tags for solutions'

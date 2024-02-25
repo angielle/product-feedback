@@ -1,6 +1,7 @@
 import React from "react";
 import Feedback from "@/app/components/feedback/Feedback";
 import Header from "../components/Header";
+import Comments from "../components/Comments";
 import AddComment from "../components/AddComment";
 
 const FeedbackDetail = () => {
@@ -16,6 +17,7 @@ const FeedbackDetail = () => {
           commentsCount={2}
           disable
         />
+        <Comments />
         <AddComment />
       </div>
     </div>

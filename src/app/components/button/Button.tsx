@@ -36,7 +36,7 @@ const Button = ({ name, type }: ButtonProps) => {
     <div
       className={`flex flex-row items-center px-5 py-3 mx-1 rounded-lg ${bgColorClass} ${hoverColorClass}`}
     >
-      <p className='text-lg font-bold text-white'>{name}</p>
+      <p className='text-lg font-bold text-center text-white'>{name}</p>
     </div>
   );
 };

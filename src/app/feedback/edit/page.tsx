@@ -8,10 +8,11 @@ import EditFeedbackIcon from "public/assets/shared/icon-edit-feedback.svg";
 import LeftArrowIcon from "public/assets/shared/icon-arrow-left.svg";
 
 const EditFeedback = () => {
-  const options = ["Feature", "UI", "UX", "Enhancement", "Bug"];
+  const category_options = ["Feature", "UI", "UX", "Enhancement", "Bug"];
+  const update_status_options = ["Suggestion", "Planned", "In-Progress", "Live"];
 
   return (
-    <div className='flex justify-center mt-20'>
+    <div className='flex justify-center mt-8'>
       <div className='w-4/12 px-10'>
         <Link
           href='/'
@@ -44,7 +45,7 @@ const EditFeedback = () => {
               id='dropdown'
               className='custom-focus block w-full rounded py-3 px-4 bg-gray-100 hover:border-royal-blue-400  text-tertiary'
             >
-              {options.map((option, index) => (
+              {category_options.map((option, index) => (
                 <option
                   key={index}
                   value={option}
@@ -54,6 +55,28 @@ const EditFeedback = () => {
                 </option>
               ))}
             </select>
+
+            <div className='my-5'>
+              <h4 className='font-bold text-state-blue-300'>Update Status</h4>
+              <h4 className='text-gray-300 mb-5'>
+                Change feedback status
+              </h4>
+            </div>
+            <select
+              id='dropdown'
+              className='custom-focus block w-full rounded py-3 px-4 bg-gray-100 hover:border-royal-blue-400  text-tertiary'
+            >
+              {update_status_options.map((option, index) => (
+                <option
+                  key={index}
+                  value={option}
+                  className='text-lg text-gray-300 hover:text-white'
+                >
+                  {option}
+                </option>
+              ))}
+            </select>
+
             <div className='my-5'>
               <h4 className='font-bold text-state-blue-300'>Feedback Detail</h4>
               <h4 className='text-gray-300 mb-5'>
